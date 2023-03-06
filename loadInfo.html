@@ -13,9 +13,16 @@
     <form>
       <fieldset>
         <legend>信息录入</legend>
-        <lable>姓名：<input type="text" placeholder="请输入姓名" required/></lable>
-        <lable>学号：<input type="number" min="1" max="42" step="1" placeholder="请输入学号" required/></lable>
+        <label>姓名：<input type="text" placeholder="请输入姓名" name="name" required/></label>
+        <label>学号：<input type="number" min="1" max="42" step="1" placeholder="请输入学号" name="no" required/></label>
+        <label>E-mail（QQ邮箱全名）：<input type="mail" name="mail"/></label>
       </fieldset>
+      <fieldset>
+        <legend>个性化选项</legend>
+        <label>背景颜色：<input type="color" name="color" required/></label>
+      </fieldset>
+      <label>想说的话：<textarea name="wannasay"></textarea></label>
+      <input type="submit" value="提交"/>
     </form>
   </body>
 </html>
