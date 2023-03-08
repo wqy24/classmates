@@ -5,8 +5,10 @@
     <meta name="renderer" content="webkit"/>
     <title>信息记录</title>
     <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="dust-full-0.3.0.min.js"></script>
     <script type="module">
       import { Octokit, App } from "https://cdn.skypack.dev/octokit";
+      import { Base64 } from 'https://cdn.jsdelivr.net/npm/js-base64@3.7.5/base64.mjs';
     </script>
     <script src="loadInfo.js"></script>
   </head>
@@ -16,6 +18,8 @@
         <legend>信息录入</legend>
         <label>姓名：<input type="text" placeholder="请输入姓名" name="name" required/></label>
         <label>学号：<input type="number" min="1" max="42" step="1" placeholder="请输入学号" name="no" required/></label>
+        <label>男<input type="radio" name="sex" value="male" selected/></label>
+        <label>女<input type="radio" name="sex" value="female"/></label>
         <label>E-mail（QQ邮箱全名）：<input type="mail" name="mail"/></label>
       </fieldset>
       <fieldset>
